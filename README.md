@@ -1,0 +1,56 @@
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+# geoDeltaAudit
+
+Geographic crosswalks are directional allocations, not inverses.  
+`geoDeltaAudit` helps quantify how much a variable changes *purely* due
+to boundary translation and allocation rules (pathway dependence).
+
+## What it does
+
+- Defines step functions for common geographic transformations (e.g.,
+  ZCTA → ZIP → county)
+- Runs an audit pipeline that reports:
+  - fan-out and loss at each step
+  - unmapped or duplicated units
+  - Δx(VAR): change induced solely by transformation choices, holding
+    the source constant
+
+## Installation
+
+``` r
+install.packages("remotes")
+remotes::install_github("phinnphace/geoDeltaAudit")
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+
+``` r
+library(geoDeltaAudit)
+## basic example code
+```
+
+# geoDeltaAudit
+
+Geographic crosswalks are directional allocations, not inverses.
+`geoDeltaAudit` helps you quantify how much a variable changes purely
+due to boundary translation + allocation rules (pathway dependence).
+
+## What it does
+
+- Defines step functions for common transformations (e.g., ZCTA → ZIP,
+  ZIP → county)
+- Runs an audit pipeline that reports:
+  - fan-out / loss at each step
+  - unmapped units
+  - Δx(VAR): change induced solely by transformation choices (holding
+    the underlying source constant)
+
+## Install
+
+\`\`\`r install.packages(“remotes”)
+remotes::install_github(“phinnphace/geoDeltaAudit”)
+
+[![DOI](https://zenodo.org/badge/1146889751.svg)](https://doi.org/10.5281/zenodo.18634442)
