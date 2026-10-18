@@ -1,8 +1,7 @@
-test_that("prep_hud_crosswalk stops when required columns are missing", {
-  bad_df <- data.frame(wrong_col = 1:3)
-  
+test_that("prep_hud_crosswalk errors on missing required columns", {
+  bad <- data.frame(zip = "00001", county = "99999")  # missing TOT_RATIO
   expect_error(
-    prep_hud_crosswalk(bad_df),
+    prep_hud_crosswalk(bad),
     "HUD crosswalk missing required columns"
   )
 })

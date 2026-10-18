@@ -1,3 +1,9 @@
+# geoDeltaAudit 0.1.1
+
+* Added a data-preparation vignette and updated the README to link to it.
+* Clarified transformation decision points and proportionality considerations
+  in the vignettes, including perturbation notation and pathway dependence.
+
 # geoDeltaAudit 0.1.0
 
 ## Initial release

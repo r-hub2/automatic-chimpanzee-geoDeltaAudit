@@ -244,8 +244,8 @@ message = FALSE, warning = FALSE )</p>
 <div id="geographic-data-transformation-auditing-why-variable-agnosticism-matters" class="section level1">
 <h1>Geographic Data Transformation Auditing: Why Variable Agnosticism
 Matters</h1>
-<div id="the-problem-in-population-health" class="section level2">
-<h2>The Problem in Population Health</h2>
+<div id="the-problem-in-population-analysis" class="section level2">
+<h2>The Problem in Population Analysis</h2>
 <ul>
 <li>Current practice treats crosswalks as neutral operations</li>
 <li>No systematic assessment of data perturbation across boundaries</li>
@@ -270,11 +270,11 @@ alter aggregate estimates under an explicit allocation rule.</p>
 (relationship-defined ZCTA membership) We define “in-county” membership
 using a relationship-based ZCTA set. This is distinct from geometric
 intersection membership and is held constant for the audit. TOT_RATIO is
-defined per ZIP across counties, the sum of ratios within a single
+defined per ZIP across counties; the sum of ratios within a single
 county is not constrained to equal the number of ZCTAs or ZIPs, and may
-exceed or fall below intuitive counts. While obvious, the ratio is the
-held constant as it is what carries throughout the rest of the
-transformations because of the crosswalk decision.</p></li>
+exceed or fall below intuitive counts. While obvious, the ratio is held
+constant as it is what carries through the rest of the transformations
+because of the crosswalk decision.</p></li>
 <li><p><strong>Decision Point 2</strong>: Are we defining membership by
 administrative linkage, or by geometric contact? We need ZIP-level
 population only because HUD operates at ZIP. Rule (explicitly stated)

@@ -1,7 +1,7 @@
 Package: geoDeltaAudit
 Title: Quantifying Variable Change Induced by Administrative Boundary
         Transformations
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: 
     person("Phinn", "Markson", , "markson.2@osu.edu", role = c("aut", "cre"))
 Description: Tools for auditing how analytic variables change when data
@@ -21,6 +21,6 @@ Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
 NeedsCompilation: no
-Packaged: 2026-05-07 16:58:05 UTC; phinnmarkson
+Packaged: 2026-10-18 19:31:46 UTC; phinnmarkson
 Author: Phinn Markson [aut, cre]
 Maintainer: Phinn Markson <markson.2@osu.edu>
